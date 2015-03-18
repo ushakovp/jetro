@@ -1,3 +1,8 @@
-.logo
-h1.h1.dark= pageTitle || page.title
-p.description Шаблон проекта для быстрого старта.
+header.page-header
+	h1.logo Jet
+		span.logo_lighter ro
+	nav.main-nav
+		ul
+			each val in ['Home', 'About us', 'Blog','Contact us']
+				li.main-nav__list-item= val
+
