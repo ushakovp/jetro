@@ -1,10 +1,33 @@
 .page-header
 	text-transform uppercase
 	font-family 'Bebas Neue'
+		&:after
+			content ''
+			display table
+			clear both
 
 .logo
-	font-size 2.25rem
+	float left
+	margin-top 18px
+	font-size 2.9rem
 	color main-color
+	font-weight bold
+	letter-spacing 1.1px
 
 .logo_lighter
 	color main-color_lighten
+
+.main-nav
+	float right
+	margin-top 15px
+
+.main-nav__list-item
+	display inline-block
+	color heading-gray inherit
+
+.main-nav__link
+	display block
+	padding 10px
+	color heading-gray
+	font-size 1.5rem
+	text-decoration none

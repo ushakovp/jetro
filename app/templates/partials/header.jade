@@ -1,8 +1,9 @@
+- var menu = ['Home','About us','Blog','Portfolio','Contact us']
 header.page-header
 	h1.logo Jet
 		span.logo_lighter ro
 	nav.main-nav
 		ul
-			each val in ['Home', 'About us', 'Blog','Contact us']
-				li.main-nav__list-item= val
+			for item in menu
+				li.main-nav__list-item: a(class="main-nav__link" href=jv0) #{item}
 
