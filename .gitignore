@@ -4,6 +4,7 @@ app/styles/helpers/sprite.styl
 app/styles/helpers/svg.styl
 app/images/sprite.png
 dist
+app/resources/fonts/
 
 # Numerous always-ignore extensions
 *.bak
