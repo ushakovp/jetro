@@ -11,6 +11,7 @@ gulp.task 'scripts', ->
 	return gulp.src [
 			'libs/jquery/dist/jquery.min.js'
 			'libs/svg4everybody/svg4everybody.min.js'
+			'libs/bxslider-4/jquery.bxslider.min.js'
 			'common.js'
 		],
 			cwd: 'app/scripts'
