@@ -28,7 +28,6 @@ gulp.task 'default', ->
 		'jade'
 		'scripts'
 		'copy'
-		'jscs'
 		'jshint'
 		'browserSync'
 		'watch'

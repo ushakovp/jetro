@@ -19,7 +19,6 @@ gulp.task 'watch', ->
 
 	gulp.watch 'app/scripts/**/*.js', [
 			'scripts'
-			'jscs'
 			'jshint'
 			reload
 		]
