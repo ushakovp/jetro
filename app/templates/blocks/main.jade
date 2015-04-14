@@ -1,35 +1,17 @@
+- var slides = ['One', 'Two', 'Threek', 'Four', 'Five', 'Six'];
+- var desc = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis quo, assumenda consequuntur, recusandae fugiat voluptatem, ipsa vero tempore ea aspernatur, tenetur vel. Voluptatibus, beatae sunt adipisci, tempore quibusdam aliquid labore!";
+
+mixin slide(index, val)
+	li
+		div(class="slide"+index)
+			.slide-info
+				.slide-title= "Slide "+val
+				.slide-desc= desc
+
 section.slider
 	ul.bxslider
-		li
-			.slide1
-				.slide-info
-					.slide-title Slide One
-					.slide-desc  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis quo, assumenda consequuntur, recusandae fugiat voluptatem, ipsa vero tempore ea aspernatur, tenetur vel. Voluptatibus, beatae sunt adipisci, tempore quibusdam aliquid labore!
-		li
-			.slide2
-				.slide-info
-					.slide-title Slide Two
-					.slide-desc  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis quo, assumenda consequuntur, recusandae fugiat voluptatem, ipsa vero tempore ea aspernatur, tenetur vel. Voluptatibus, beatae sunt adipisci, tempore quibusdam aliquid labore!
-		li
-			.slide3
-				.slide-info
-					.slide-title Slide Three
-					.slide-desc  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis quo, assumenda consequuntur, recusandae fugiat voluptatem, ipsa vero tempore ea aspernatur, tenetur vel. Voluptatibus, beatae sunt adipisci, tempore quibusdam aliquid labore!
-		li
-			.slide4
-				.slide-info
-					.slide-title Slide Four
-					.slide-desc  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis quo, assumenda consequuntur, recusandae fugiat voluptatem, ipsa vero tempore ea aspernatur, tenetur vel. Voluptatibus, beatae sunt adipisci, tempore quibusdam aliquid labore!
-		li
-			.slide5
-				.slide-info
-					.slide-title Slide Five
-					.slide-desc  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis quo, assumenda consequuntur, recusandae fugiat voluptatem, ipsa vero tempore ea aspernatur, tenetur vel. Voluptatibus, beatae sunt adipisci, tempore quibusdam aliquid labore!
-		li
-			.slide6
-				.slide-info
-					.slide-title Slide Six
-					.slide-desc  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis quo, assumenda consequuntur, recusandae fugiat voluptatem, ipsa vero tempore ea aspernatur, tenetur vel. Voluptatibus, beatae sunt adipisci, tempore quibusdam aliquid labore!
+		each val, index in slides
+			+slide(index+1, val)
 	.slider-controls
 		.slider-controls-prev
 		.slider-controls-next
