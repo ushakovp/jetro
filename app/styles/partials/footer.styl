@@ -1,8 +1,71 @@
-.copyright
-	margin 30px -20px -20px
-	padding 20px
-	border-radius 0 0 4px 4px
+.page-footer
+	background-color main-color
+	max-width 940px
+	margin-top 48px
+	clearfix()
+	color #fff
 
-	+to-width(540px)
-		margin-bottom -40px
-		border-radius 0
+	article
+		float left
+		width 300px
+
+		h1
+			margin-bottom 20px
+			text-transform uppercase
+			font-family 'Bebas Neue'
+			font-size 1.55rem
+			letter-spacing .7px
+
+		p
+			font-family Helvetica
+			font-size 0.8rem
+			line-height 12px
+
+	article + article
+		margin-left 20px
+
+	.about
+		padding 35px
+		padding-right 10px
+
+
+	.twitter
+		padding 35px
+		a
+			color link-c
+
+	.contact
+		padding-top 35px
+		a
+			font-size 0.75rem
+			color link-c
+
+.tweet
+	margin 25px 0
+	font-family Helvetica
+	font-size 0.8rem
+	line-height 14px
+
+.soc-panel
+	padding 0
+	margin 10px 0
+
+	li
+		display inline-block
+
+		a
+			display block
+
+.fb
+	sprite $i-soc-fb
+.tw
+	sprite $i-soc-tw
+.ma
+	sprite $i-soc-em
+.rs
+	sprite $i-soc-rss
+.vi
+	sprite $i-soc-vm
+
+
+
