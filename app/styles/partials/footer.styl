@@ -1,17 +1,10 @@
 .page-footer
 	background-color main-color
 	max-width 940px
+	margin 0 auto
 	margin-top 48px
 	color #fff
-	clearfix()
-	&:before
-		position absolute
-		content ''
-		height 16.6em
-		width 13.5em
-		margin-left -230px
-		background-color rgba(232, 102, 60, 0.5)
-
+	overflow hidden
 
 	article
 		float left
@@ -48,14 +41,6 @@
 		a
 			font-size 0.75rem
 			color link-c
-		&:after
-			position absolute
-			content ''
-			top 0
-			left 312px
-			height 16.6em
-			width 13.5em
-			background-color rgba(232, 102, 60, 0.5)
 
 .tweet
 	margin 25px 0
@@ -83,6 +68,3 @@
 	sprite $i-soc-rss
 .vi
 	sprite $i-soc-vm
-
-
-

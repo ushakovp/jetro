@@ -8,7 +8,7 @@ mixin slide(index, val)
 				.slide-title= "Slide "+val
 				.slide-desc= desc
 
-section.slider
+section.slider.deco-up
 	ul.bxslider
 		each val, index in slides
 			+slide(index+1, val)
